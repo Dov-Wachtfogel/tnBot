@@ -9,13 +9,13 @@ let pasuk = '';
 let pasuks_num = 0;
 let mid_grade = 0;
 let tries = 0;
-let tora = ['בראשית', 'שמות', 'ויקרא', 'במדבר', 'דברים']
-let first_nevieim = ['יהושע', 'שופטים', 'שמואל', 'מלכים]
-let last_nevieim = ['ישעיהו', 'ירמיהו', 'יחזקאל']
-let twelve = ['הושע', 'יואל', 'עמוס', 'עובדיה', 'יונה', 'מיכה', 'נחום', 'חבקוק', 'צפניה', 'חגי', 'זכריה', 'מלאכי]
-let emet = ['תהלים', 'משלי', 'איוב']
-let megilot = ['שיר השירים', 'רות', 'איכה', 'קהלת', 'אסתר']
-let end_ktuvim = ['דניאל', 'עזרא', 'נחמיה','דברי הימים']
+let tora = ['בראשית', 'שמות', 'ויקרא', 'במדבר', 'דברים'];
+let first_nevieim = ['יהושע', 'שופטים', 'שמואל', 'מלכים'];
+let last_nevieim = ['ישעיהו', 'ירמיהו', 'יחזקאל'];
+let twelve = ['הושע', 'יואל', 'עמוס', 'עובדיה', 'יונה', 'מיכה', 'נחום', 'חבקוק', 'צפניה', 'חגי', 'זכריה', 'מלאכי'];
+let emet = ['תהלים', 'משלי', 'איוב'];
+let megilot = ['שיר השירים', 'רות', 'איכה', 'קהלת', 'אסתר'];
+let end_ktuvim = ['דניאל', 'עזרא', 'נחמיה','דברי הימים'];
 
 function ask(){
     book = randomChoice(Object.keys(PSUKIM_BAHOMER));
@@ -56,13 +56,13 @@ function send_books(){
     send('סוף כתובים: דניאל, עזרא, נחמיה, דברי הימים')
 }
 function give_help() {
-    if tora.includes(book) send('הפסוק נמצא בתורה');
-    else if first_nevieim.includes(book) send('הפסוק נמצא כנביאים ראשונים');
-    else if last_nevieim.includes(book) send('הפסוק נמצא בנביאים אחרונים');
-    else if twelve.includes(book) send('הפסוק נמצא בתרי-עשר');
-    else if emet.includes(book) send('הפסוק נמצא בספרי אמ"ת');
-    else if megilot.includes(book) send('הפסוק נמצא בחמש מגילות');
-    else if end_ktuvim.includes(book) send('הפסוק נמצא בסוף כתובים');
+    if (tora.includes(book)) send('הפסוק נמצא בתורה');
+    else if (first_nevieim.includes(book)) send('הפסוק נמצא כנביאים ראשונים');
+    else if (last_nevieim.includes(book)) send('הפסוק נמצא בנביאים אחרונים');
+    else if (twelve.includes(book)) send('הפסוק נמצא בתרי-עשר');
+    else if (emet.includes(book)) send('הפסוק נמצא בספרי אמ"ת');
+    else if (megilot.includes(book)) send('הפסוק נמצא בחמש מגילות');
+    else if (end_ktuvim.includes(book)) send('הפסוק נמצא בסוף כתובים');
     tries +=2
 
 }
